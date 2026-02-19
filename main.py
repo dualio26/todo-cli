@@ -4,7 +4,7 @@ import storage
 
 def main():
     parser = argparse.ArgumentParser(description="CLI Todo List")
-    parser.add_argument("commmand", choices=["add", "list", "done", "delete", "archive"])
+    parser.add_argument("command", choices=["add", "list", "done", "delete", "archive"])
     parser.add_argument("args", nargs="*", help="Argument for command")
 
     args = parser.parse_args()

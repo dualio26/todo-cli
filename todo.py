@@ -7,15 +7,15 @@ class TodoItem:
         self.created = datetime.now().isoformat()
         self.completed = None
     
-        def to_dict(self):
-            return {"id": self.id, "text": self.text, "created": self.created, "completed": self.completed}
+    def to_dict(self):
+        return {"id": self.id, "text": self.text, "created": self.created, "completed": self.completed}
 
-        @staticmethod
-        def from_dict(data):
-            item = TodoItem(data["id"], data["text"])
-            item.created = data["created"]
-            item.completed = data.get("completed")
-            return item
+    @staticmethod
+    def from_dict(data):
+        item = TodoItem(data["id"], data["text"])
+        item.created = data["created"]
+        item.completed = data.get("completed")
+        return item
 
 class TodoList:
     def __init__(self):

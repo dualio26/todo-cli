@@ -56,8 +56,8 @@ def interactive_mode():
         elif command == "add":
             if arg:
                 item = todo_list.add(arg)
-                print(f"Added: {item.text")
-                      storage.save(todo_list)
+                print(f"Added: {item.text}")
+                storage.save(todo_list)
             else:
                 print("Usage: add <task>")
 

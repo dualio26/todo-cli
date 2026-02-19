@@ -1,0 +1,25 @@
+{
+  "active": [
+    {
+      "id": 1,
+      "text": "Learn Git",
+      "created": "2026-02-19T23:57:47.559325",
+      "completed": null
+    },
+    {
+      "id": 3,
+      "text": "Terminal Shortcut",
+      "created": "2026-02-20T00:45:11.273892",
+      "completed": null
+    }
+  ],
+  "archived": [
+    {
+      "id": 2,
+      "text": "Session creation",
+      "created": "2026-02-20T00:41:54.665687",
+      "completed": "2026-02-20T00:42:01.636031"
+    }
+  ],
+  "next_id": 4
+}

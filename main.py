@@ -21,7 +21,7 @@ def main():
     elif args.command == "list":
         print("== Active ==")
         for item in todo_list.list_active():
-            print(f"{item.it}) {item.text}")
+            print(f"{item.id}) {item.text}")
         print("== Archived ==")
         for item in todo_list.list_archived():
             print(f"{item.id}) {item.text} (completed)")

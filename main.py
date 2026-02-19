@@ -22,7 +22,7 @@ def print_menu():
     print("Archived Tasks:")
     for item in todo_list.list_archived():
         print(f" {item.id} {item.text} (completed)")
-            
+        
     if not todo_list.list_archived():
         print(" (no Archived tasks)")
 
@@ -51,6 +51,7 @@ def interactive_mode():
         arg = parts[1] if len(parts) > 1 else ""
 
         if command == "exit":
+            ui.clear_screen()
             break
 
         elif command == "add":
@@ -88,7 +89,7 @@ def interactive_mode():
 
 def main():
     parser = argparse.ArgumentParser(description="CLI Todo List")
-    parser.add_argument("command", nargs="?", choices=["add", "list", "done", "delete", "archive", "interactive", help="Command to run"])
+    parser.add_argument("command", nargs="?", choices=["add", "list", "done", "delete", "archive", "interactive"], help="Command to run")
     parser.add_argument("args", nargs="*", help="Argument for command")
 
     args = parser.parse_args()
